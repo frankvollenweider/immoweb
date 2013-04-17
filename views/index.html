@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?php partial('head', array('title' => 'Home')) ?>
+    </head>
+    <body>
+        <header>
+            <?php module('Logo') ?>
+            <?php module('Search') ?>
+            <?php module('User') ?>
+        </header>
+        <section class="bd">
+            <section class="bd-left">
+                <?php module('Navigation') ?>
+            </section>
+            <section class="bd-main">
+                <?php module('Filter') ?>
+                <?php module('ExpenseList') ?>
+            </section>
+            <aside class="bd-sidebar">
+                <?php module('Action') ?>
+                <?php module('ExpenseStatistics') ?>
+            </aside>
+        </section>
+        <?php partial('foot') ?>
+    </body>
+</html>
