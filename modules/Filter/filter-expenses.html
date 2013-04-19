@@ -2,19 +2,22 @@
     <div class="filter">
         <label for="fld-liegenschaft">Liegenschaft</label>
         <select id="fld-liegenschaft" name="liegenschaft">
-            <option>Sonnenweg 8</option>
+            <option value="0" selected>Alle Liegenschaften</option>
         </select>
     </div>
     <div class="filter">
         <label for="fld-objekt">Objekt</label>
         <select id="fld-objekt" name="objekt">
-            <option>Etage 1, 3.5 Zi.</option>
+            <option value="0" selected>Alle Objekte</option>
         </select>
     </div>
     <div class="filter">
         <label for="fld-ausgabentyp">Ausgabentyp</label>
         <select id="fld-ausgabentyp" name="ausgabentyp">
-            <option>Alle Ausgaben</option>
+            <option value="0" selected>Alle Ausgabekategorien</option>
         </select>
     </div>
 </form>
+<script id="option" type="text/x-dot-template">
+<option value="{{=it.id}}">{{=it.title}}</option>
+</script>

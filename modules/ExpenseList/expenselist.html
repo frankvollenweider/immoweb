@@ -1,23 +1,25 @@
-<table cellspacing="0" cellpadding="0" width="100%">
+<table>
     <tbody>
         
     </tbody>
 </table>
-<script type="x-dot-template">
-<tr>
+<script id="expense" type="text/x-dot-template">
+<tr data-id="{{=it.id}}">
     <td class="col-date">
         <div class="calendar">
-            <div class="month">{{=it.month}}</div>
-            <div class="day">{{=it.day}}</div>
+            <div class="month">{{=it.date.month}}</div> <!-- links oben, waagrecht -->
+            <div class="day">{{=it.date.day}}</div> <!-- links unten, waagrecht -->
+            <div class="year">{{=it.date.year}}</div> <!-- rechts, senkrecht -->
         </div>
     </td>
-    <td class="col-meta">
+    <td class="col-meta" title="{{=it.category.title}} : {{=it.description}}">
         <div class="title">{{=it.title}}</div>
-        <div class="description">{{=it.description}}</div>
+        <div class="creditor">{{=it.creditor}}</div>
     </td>
     <td class="col-value">
-        <div class="currency">{{=it.currency}}</div>
-        <div class="amount">{{=it.amount}}</div>
+        <div class="currency">{{=it.money.currency}}</div>
+        <div class="amount">{{=it.money.amount}}</div>
     </td>
+    <!-- TODO rdu: Div mit Actions (Edit, Delete), das bei Mausclick auf die Zeile angezeigt wird. -->
 </tr>
 </script>
