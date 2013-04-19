@@ -1,0 +1,241 @@
+{
+    "success": true,
+    "estates": [
+        {
+            "id": 1,
+            "title": "Waldegg"
+        },
+        {
+            "id": 2,
+            "title": "Sagerain"
+        },
+        {
+            "id": 3,
+            "title": "Schlipf"
+        }
+    ],
+    "properties": [
+        {
+            "id": 1,
+            "estate": {
+                "id": 1
+            },
+            "title": "110.01 - 3.5Zi, EG"
+        },
+        {
+            "id": 2,
+            "estate": {
+                "id": 1
+            },
+            "title": "110.02 - 2.5Zi, EG"
+        },
+        {
+            "id": 3,
+            "estate": {
+                "id": 1
+            },
+            "title": "110.03 - 4.5Zi, 1. Stock"
+        },
+        {
+            "id": 4,
+            "estate": {
+                "id": 1
+            },
+            "title": "110.04 - 1.5Zi, 1. Stock"
+        },
+        {
+            "id": 5,
+            "estate": {
+                "id": 2
+            },
+            "title": "117.01 - 2.5Zi, EG"
+        },
+        {
+            "id": 6,
+            "estate": {
+                "id": 2
+            },
+            "title": "117.02 - 3.5Zi, EG"
+        },
+        {
+            "id": 7,
+            "estate": {
+                "id": 2
+            },
+            "title": "117.03 - 6Zi, Maisonette"
+        },
+        {
+            "id": 8,
+            "estate": {
+                "id": 3
+            },
+            "title": "121.00 - 4.5Zi"
+        }
+    ],
+    "expenseCategories": [
+        {
+            "id": 1,
+            "title": "Betriebskosten"
+        },
+        {
+            "id": 2,
+            "title": "Unterhaltskosten"
+        },
+        {
+            "id": 3,
+            "title": "Investitionskosten"
+        }
+    ],
+    "expenses": [
+        {
+            "id": 6,
+            "category": {
+                "id": 2
+            },
+            "estate": {
+                "id": 1
+            },
+            "property": {
+                "id": 1
+            },
+            "date": {
+                "date": "2013-04-30",
+                "year": "2013",
+                "month": "APR",
+                "day": "30"
+            },
+            "title": "Malerarbeiten",
+            "description": "Kinderzimmer und Gang neu gestrichen",
+            "creditor": "Storcher & Söhne Malermeister GmbH",
+            "money": {
+                "currency": "CHF",
+                "amount": "890.70"
+            }
+        },
+        {
+            "id": 5,
+            "category": {
+                "id": 1
+            },
+            "estate": {
+                "id": 1
+            },
+            "property": {
+                "id": 2
+            },
+            "date": {
+                "date": "2013-04-27",
+                "year": "2013",
+                "month": "APR",
+                "day": "27"
+            },
+            "title": "Radio/TV Kabelanschluss",
+            "description": "Anschlussgebühren",
+            "creditor": "Cabelcom AG",
+            "money": {
+                "currency": "CHF",
+                "amount": "1'220.10"
+            }
+        },
+        {
+            "id": 4,
+            "category": {
+                "id": 2
+            },
+            "estate": {
+                "id": 1
+            },
+            "property": {
+                "id": 2
+            },
+            "date": {
+                "date": "2013-04-19",
+                "year": "2013",
+                "month": "APR",
+                "day": "19"
+            },
+            "title": "Ersatz Backofenbleche",
+            "description": "3 Stück",
+            "creditor": "Sanitas Trösch AG, St. Gallen",
+            "money": {
+                "currency": "CHF",
+                "amount": "123.60"
+            }
+        },
+        {
+            "id": 3,
+            "category": {
+                "id": 1
+            },
+            "estate": {
+                "id": 2
+            },
+            "property": {
+                "id": 1
+            },
+            "date": {
+                "date": "2013-04-12",
+                "year": "2013",
+                "month": "APR",
+                "day": "12"
+            },
+            "title": "Heizöl",
+            "description": "3500 Liter, Öko",
+            "creditor": "Agip AG, St. Gallen",
+            "money": {
+                "currency": "CHF",
+                "amount": "3'945.85"
+            }
+        },
+        {
+            "id": 2,
+            "category": {
+                "id": 3
+            },
+            "estate": {
+                "id": 2
+            },
+            "property": {
+                "id": 1
+            },
+            "date": {
+                "date": "2013-04-07",
+                "year": "2013",
+                "month": "APR",
+                "day": "07"
+            },
+            "title": "Schreinerarbeiten",
+            "description": "Neuer Wintergarten",
+            "creditor": "Schreiner Niederer, Uzwil",
+            "money": {
+                "currency": "CHF",
+                "amount": "19'550.00"
+            }
+        },
+        {
+            "id": 1,
+            "category": {
+                "id": 2
+            },
+            "estate": {
+                "id": 3
+            },
+            "property": {
+                "id": 1
+            },
+            "date": {
+                "date": "2013-04-02",
+                "year": "2013",
+                "month": "APR",
+                "day": "02"
+            },
+            "title": "Ersatz Küche",
+            "description": "Neue Küche mit Kochinsel, weiss glänzend",
+            "creditor": "Schubiger AG, Fürstenlandstrasse, St. Gallen",
+            "money": {
+                "currency": "CHF",
+                "amount": "22'000.00"
+            }
+        }
+    ]
+}
