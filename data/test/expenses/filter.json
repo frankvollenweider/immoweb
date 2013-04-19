@@ -1,0 +1,80 @@
+{
+    "success": true,
+    "expenses": [
+        {
+            "id": 6,
+            "category": {
+                "id": 2
+            },
+            "estate": {
+                "id": 1
+            },
+            "property": {
+                "id": 1
+            },
+            "date": {
+                "date": "2013-04-30",
+                "year": "2013",
+                "month": "APR",
+                "day": "30"
+            },
+            "title": "Malerarbeiten",
+            "description": "Kinderzimmer und Gang neu gestrichen",
+            "creditor": "Storcher & Söhne Malermeister GmbH",
+            "money": {
+                "currency": "CHF",
+                "amount": "890.70"
+            }
+        },
+        {
+            "id": 4,
+            "category": {
+                "id": 2
+            },
+            "estate": {
+                "id": 1
+            },
+            "property": {
+                "id": 2
+            },
+            "date": {
+                "date": "2013-04-19",
+                "year": "2013",
+                "month": "APR",
+                "day": "19"
+            },
+            "title": "Ersatz Backofenbleche",
+            "description": "3 Stück",
+            "creditor": "Sanitas Trösch AG, St. Gallen",
+            "money": {
+                "currency": "CHF",
+                "amount": "123.60"
+            }
+        },
+        {
+            "id": 2,
+            "category": {
+                "id": 3
+            },
+            "estate": {
+                "id": 2
+            },
+            "property": {
+                "id": 1
+            },
+            "date": {
+                "date": "2013-04-07",
+                "year": "2013",
+                "month": "APR",
+                "day": "07"
+            },
+            "title": "Schreinerarbeiten",
+            "description": "Neuer Wintergarten",
+            "creditor": "Schreiner Niederer, Uzwil",
+            "money": {
+                "currency": "CHF",
+                "amount": "19'550.00"
+            }
+        }
+    ]
+}
