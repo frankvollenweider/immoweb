@@ -31,25 +31,32 @@
         },
 
         onFilterDataLoaded: function(data) {
-			console.log("filter.js: onFilterDataLoaded - " + data.estates);
+            
+            var $ctx = this.$ctx;
+            var that = this;
+
+            console.log(data.estates);
         	if (data.estates) {
         		$.each(data.estates, function(key, item) {
-                	console.log("FVO - " + item);
-        			$('#fld-liegenschaft', $ctx).append($(that.templatesCache['option'](item)));
+                    if (item) {
+            			$('#fld-liegenschaft', $ctx).append($(that.templatesCache['option'](item)));
+                    }
                 });
         	}
 			console.log("filter.js: onFilterDataLoaded - " + data.properties);
         	if (data.properties) {
         		$.each(data.properties, function(key, item) {
-                	console.log("FVO - " + item);
-        			$('#fld-objekt', $ctx).append($(that.templatesCache['option'](item)));
+                	if (item) {
+            			$('#fld-objekt', $ctx).append($(that.templatesCache['option'](item)));
+                    }
                 });
         	}
 			console.log("filter.js: onFilterDataLoaded - " + data.categories);
         	if (data.categories) {
         		$.each(data.categories, function(key, item) {
-                	console.log("FVO - " + item);
-        			$('#fld-ausgabentyp', $ctx).append($(that.templatesCache['option'](item)));
+                	if (item) {
+            			$('#fld-ausgabentyp', $ctx).append($(that.templatesCache['option'](item)));
+                    }
                 });
         	}
         }

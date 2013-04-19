@@ -31,26 +31,14 @@
             // compile templates
             this.templatesCache['expense'] = doT.template($('#expense').text());
 
-            // initial load
-            this.load();
             console.log("expenselist.js: end of on");
 
             callback();
         },
         
         after: function() {
-
-            var that = this;
-            var $ctx = this.$ctx;
-
-            var filterData = {
-                estates : that.estatesCache,
-                properties : that.propertiesCache,
-                categories : that.expenseCategoriesCache
-            };
-            console.log("expenselist.js: end of after (bevor fire....)");
-            that.fire('filterDataLoaded', filterData, [1]); // FilterData
-
+            // initial load
+            this.load();
         },
 
         load: function() {
@@ -66,7 +54,6 @@
                 data: JSON.stringify(data),
                 dataType: 'json',
                 success: function(data) {
-
                     if (!data.success) { that.onError(data.messages); return; };
 
                     if (data.estates) {
@@ -90,6 +77,14 @@
                     		$('table', $ctx).append(newExpense);
                     	});
                     }
+
+                    var filterData = {
+                        estates : that.estatesCache,
+                        properties : that.propertiesCache,
+                        categories : that.expenseCategoriesCache
+                    };
+                    console.log("expenselist.js: end of after (bevor fire....)");
+                    that.fire('filterDataLoaded', filterData, [1]); // FilterData
 
                 }
             });
