@@ -1,6 +1,4 @@
-function serviceUrl(path) {
-	var demo = true;
-	var protocol = 'http';
-	var host = demo ? 'www.immoweb.com' : 'api.immoweb.com';
-	return protocol + '://' + host + '/' + (demo ? 'data/test/' : '') + path + (demo ? '.json' : '');
+function serviceUrl(path, simulate) {
+	if (simulate || Tc.Config["backend"]["simulate"]) { return 'data/test/' + path + '.json'; }
+	return Tc.Config["backend"]["protocol"] + '://' + Tc.Config["backend"]["host"] + '/' + path;
 }

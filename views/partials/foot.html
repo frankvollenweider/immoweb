@@ -1,5 +1,14 @@
 <script src="app.js"></script>
 <script>
+// Configuration
+Tc.Config = Tc.$.extend(Tc.Config, {
+    "backend": {
+    	"simulate": true,
+    	"host": "api.immoweb.com",
+    	"protocol": "http"
+    }
+});
+// Bootstrap
 (function($) {
     $(document).ready(function() {
         var application = new Tc.Application($('html'), {});

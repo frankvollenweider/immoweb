@@ -3,7 +3,7 @@
         
     </tbody>
 </table>
-<script id="expense" type="text/x-dot-template">
+<script id="tmpl-expense" type="text/x-dot-template">
 <tr data-id="{{=it.id}}">
     <td class="col-date">
         <div class="calendar">
@@ -20,6 +20,5 @@
         <div class="currency">{{=it.money.currency}}</div>
         <div class="amount">{{=it.money.amount}}</div>
     </td>
-    <!-- TODO rdu: Div mit Actions (Edit, Delete), das bei Mausclick auf die Zeile angezeigt wird. -->
 </tr>
 </script>

@@ -1,0 +1,28 @@
+{
+    "success": true,
+    "expense": {
+        "id": 6,
+        "category": {
+            "id": 2
+        },
+        "estate": {
+            "id": 1
+        },
+        "property": {
+            "id": 1
+        },
+        "date": {
+            "date": "2013-04-30",
+            "year": "2013",
+            "month": "APR",
+            "day": "30"
+        },
+        "title": "Malerarbeiten",
+        "description": "Kinderzimmer und Gang neu gestrichen",
+        "creditor": "Storcher & Söhne Malermeister GmbH",
+        "money": {
+            "currency": "CHF",
+            "amount": "890.70"
+        }
+    }
+}

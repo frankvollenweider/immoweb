@@ -1,0 +1,15 @@
+<div class="modal"></div>
+<script id="tmpl-edit-item" type="text/x-dot-template">
+<h2>Ausgabe</h2>
+<div class="content">
+<!-- Nur Beispiel, um save action zu testen... -->
+    <label for="title">Titel</label>
+    <input type="text" id="title" class="fld" data-field="title" value="{{? it.title}}{{=it.title}}{{?}}" />
+<!-- Nur Beispiel, um save action zu testen... -->
+    <div class="status">Die Änderungen werden automatisch gespeichert.</div>
+</div>
+<div class="btn-bar">
+    <a href="javascript:;" class="btn btn-delete">Löschen</a>
+    <a href="javascript:;" class="btn btn-cancel">Schliessen</a>
+</div>
+</script>

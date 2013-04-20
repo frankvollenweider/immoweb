@@ -1,23 +1,23 @@
 <form method="get">
     <div class="filter">
-        <label for="fld-liegenschaft">Liegenschaft</label>
-        <select id="fld-liegenschaft" name="liegenschaft">
+        <label for="fld-estate">Liegenschaft</label>
+        <select id="fld-estate" name="estate-filter">
             <option value="0" selected>Alle Liegenschaften</option>
         </select>
     </div>
     <div class="filter">
-        <label for="fld-objekt">Objekt</label>
-        <select id="fld-objekt" name="objekt">
+        <label for="fld-property">Objekt</label>
+        <select id="fld-property" name="property-filter">
             <option value="0" selected>Alle Objekte</option>
         </select>
     </div>
     <div class="filter">
-        <label for="fld-ausgabentyp">Ausgabentyp</label>
-        <select id="fld-ausgabentyp" name="ausgabentyp">
+        <label for="fld-expensecategory">Ausgabentyp</label>
+        <select id="fld-expensecategory" name="expensecategory-filter">
             <option value="0" selected>Alle Ausgabekategorien</option>
         </select>
     </div>
 </form>
-<script id="option" type="text/x-dot-template">
+<script id="tmpl-filter-option" type="text/x-dot-template">
 <option value="{{=it.id}}">{{=it.title}}</option>
 </script>
