@@ -1,7 +1,7 @@
 {
     "css": [
         "reset.css",
-        "elements.css",
+        "elements.less",
         "*.css",
         "*.less"
     ],
